@@ -8,7 +8,7 @@ st.set_page_config(page_title="Sales Analysis System", layout="wide")
 st.markdown("""
 <style>
 .block-container {
-    padding-top: 1.2rem;
+    padding-top: 2.0rem;
     padding-bottom: 1rem;
 }
 
@@ -42,6 +42,10 @@ div[role="radiogroup"] input[type="radio"]:checked + div {
 </style>
 """, unsafe_allow_html=True)
 
+# head part
+st.markdown("""
+<h2 style="margin-bottom:10px; color:black;">📊 Sales Analysis System</h2>
+""", unsafe_allow_html=True)
 
 #uploader and column division
 col1, col2 = st.columns([3, 2])
@@ -63,7 +67,7 @@ with col2:
 
 # menu
 menu = st.radio(
-    "",
+    "Navigation",
     ["Home", "City-wise Sales", "Category Revenue", "Best Product", "Filters"],
     horizontal=True,
     label_visibility="collapsed"
