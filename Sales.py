@@ -42,13 +42,6 @@ div[role="radiogroup"] input[type="radio"]:checked + div {
 </style>
 """, unsafe_allow_html=True)
 
-# head part
-st.markdown("""
-<h2 style="margin-bottom:0;">📊 Sales Analysis System</h2>
-<p style="color:gray; margin-top:0; margin-bottom:10px;">
-Powered by Study Trigger
-</p>
-""", unsafe_allow_html=True)
 
 #uploader and column division
 col1, col2 = st.columns([3, 2])
